@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Mathys Sousa - Étudiant en BTS SIO option SLAM, passionné de développement et nouvelles technologies">
+    <title>Portfolio Mathys Sousa - Développeur en formation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span><i class="fas fa-code"></i> MS</span>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="templates/entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+                <li><a href="templates/realisation.html"><i class="fas fa-laptop-code"></i> Réalisations</a></li>
+                <li><a href="templates/veille.html"><i class="fas fa-newspaper"></i> Veille</a></li>
+                <li><a href="templates/bilan.html"><i class="fas fa-chart-line"></i> Bilan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Titre principal -->
+    <div class="site-title fade-in">
+        <h1>Bienvenue sur mon Portfolio | Mathys Sousa</h1>
+    </div>
+
+    <!-- Section Présentation -->
+    <section class="presentation fade-in">
+        <h2><i class="fas fa-user-circle"></i> Présentation</h2>
+        <div class="presentation-content">
+            <div class="bio">
+                <p>Je m'appelle <strong>Mathys Sousa</strong>, j'ai 19 ans et je suis actuellement en formation <strong>BTS SIO</strong> option <strong>SLAM</strong> (Développement) à l'ESIEE-IT de Cergy-Pontoise.</p>
+                <p>Passionné d'informatique et de nouvelles technologies depuis mon plus jeune âge, j'ai choisi cette formation pour développer mes compétences en programmation, gestion de projet et travail d'équipe.</p>
+                <p>J'aime apprendre et découvrir de nouvelles technologies constamment, toujours à la recherche de nouvelles expériences pour enrichir mon parcours professionnel.</p>
+                <div class="cta-buttons">
+                    <a href="templates/realisation.html" class="btn btn-primary">
+                        <i class="fas fa-laptop-code"></i> Voir mes projets
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Timeline -->
+    <section class="timeline-section fade-in">
+        <h2><i class="fas fa-graduation-cap"></i> Mon Parcours</h2>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <span class="date">2023-2025</span>
+                        <h3 class="title">BTS SIO option SLAM</h3>
+                        <p class="descr">Formation en développement d'applications à l'ESIEE-IT de Cergy-Pontoise</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span class="date">2023-2025</span>
+                        <h3 class="title">Alternance chez Prevor</h3>
+                        <p class="descr">Développement d'applications et support informatique à Nesles-la-Vallée</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="date">2020-2023</span>
+                        <h3 class="title">Baccalauréat Général</h3>
+                        <p class="descr">Options Anglais et Sciences économiques et sociales au lycée Fragonard à L'Isle-Adam</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="competences fade-in">
+        <h2><i class="fas fa-code"></i> Mes Compétences</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Langages de programmation</h3>
+                <ul class="skills-grid">
+                    <li>
+                        <div class="skill-card" data-skill="HTML">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Icon">
+                            <span>HTML</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="CSS">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon">
+                            <span>CSS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript Icon">
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="Java">
+                            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Icon">
+                            <span>Java</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="C#">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C# Icon">
+                            <span>C#</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="PHP">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP Icon">
+                            <span>PHP</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="SQL">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL Icon">
+                            <span>SQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="Python">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Icon">
+                            <span>Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Environnements et Outils</h3>
+                <ul class="skills-grid">
+                    <li>
+                        <div class="skill-card" data-skill="Windev">
+                            <img src="img/windev.png" alt="Windev Icon">
+                            <span>Windev</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="Webdev">
+                            <img src="img/webdev.png" alt="Webdev Icon">
+                            <span>Webdev</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="VBA">
+                            <img src="img/excel.png" alt="VBA Icon">
+                            <span>VBA</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="VSCode">
+                            <img src="img/vscode.png" alt="VSCode Icon">
+                            <span>Visual Studio Code</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="GitHub">
+                            <img src="img/github.png" alt="GitHub Icon">
+                            <span>GitHub</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="Postman">
+                            <img src="img/postman.png" alt="Postman Icon">
+                            <span>Postman</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="IntelliJ">
+                            <img src="img/IntelliJ.png" alt="IntelliJ Icon">
+                            <span>IntelliJ IDEA</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-card" data-skill="PhpMyAdmin">
+                            <img src="img/phpmyadmin.png" alt="PhpMyAdmin Icon">
+                            <span>PhpMyAdmin</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/mathys-sousa-b32145273/" target="_blank" class="btn-social">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/VacheKiriii" target="_blank" class="btn-social">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="templates/mentions-legales.html">
+                    <i class="fas fa-gavel"></i> Mentions légales
+                </a>
+            </div>
+            <div class="footer-info">
+                <p class="copyright">Tous droits réservés. Portfolio Mathys Sousa | BTS SIO SLAM 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

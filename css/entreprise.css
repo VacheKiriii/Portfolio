@@ -1,0 +1,439 @@
+/* Styles spécifiques pour la page Entreprise */
+
+/* Section Description de l'entreprise */
+.description-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.description-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.description-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.description-text strong {
+    color: #E24A68;
+    font-weight: 600;
+}
+
+.description-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 300px;
+}
+
+/* Conteneur pour les images côte à côte */
+.image-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Photo Prevor */
+.description-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    max-width: 250px;
+}
+
+.description-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(226, 74, 104, 0.3);
+}
+
+.description-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.company-logo {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.description-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Bouton Site web */
+.btn-site-web {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-site-web i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.btn-site-web:hover {
+    background-color: #E24A68;
+    border-color: #E24A68;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(226, 74, 104, 0.3);
+}
+
+/* Section Équipe */
+.equipe {
+    text-align: center;
+}
+
+/* Organigramme moderne */
+.organigramme {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.org-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.org-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #E24A68, transparent);
+    z-index: 1;
+}
+
+.org-level {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.personne {
+    text-align: center;
+    width: 150px;
+    background-color: #2a2a2a;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.personne:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(226, 74, 104, 0.2);
+    background-color: #333;
+}
+
+.avatar-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #E24A68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    transition: all 0.3s ease;
+}
+
+.personne:hover .avatar-container {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(226, 74, 104, 0.3);
+}
+
+.avatar-container i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.personne p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+}
+
+.personne.highlight {
+    border: 2px solid #E24A68;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #E24A68;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles des personnes par rôle */
+.personne.chef .avatar-container {
+    background-color: #E24A68;
+}
+
+.personne.assistante .avatar-container {
+    background-color: #3498db;
+}
+
+.personne.chef-infra .avatar-container,
+.personne.developpeur .avatar-container {
+    background-color: #1abc9c;
+}
+
+.personne.technicien .avatar-container {
+    background-color: #9b59b6;
+}
+
+.personne.alternant .avatar-container {
+    background-color: #f1c40f;
+}
+
+/* Section Missions */
+.missions-content {
+    text-align: center;
+}
+
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.mission-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #E24A68;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mission-card:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.mission-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #E24A68;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover .mission-icon {
+    transform: scale(1.1);
+}
+
+.mission-icon i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.mission-card h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: none;
+}
+
+.mission-card p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Animation pour le bouton "En savoir plus" */
+.animated-button {
+    background-color: #E24A68;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.animated-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(226, 74, 104, 0.3);
+}
+
+.animated-button:hover::before {
+    left: 100%;
+}
+
+/* Animation pour le pop-up */
+.popup-content {
+    max-width: 800px;
+}
+
+.missions-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mission-detail {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mission-detail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(226, 74, 104, 0.2);
+}
+
+.mission-detail h4 {
+    color: #E24A68;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mission-detail p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .description-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-text,
+    .description-right {
+        width: 100%;
+    }
+
+    .missions-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .org-container::before {
+        left: 30px;
+    }
+
+    .org-level {
+        justify-content: flex-start;
+        padding-left: 60px;
+    }
+
+    .missions-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .personne {
+        width: 120px;
+    }
+
+    .avatar-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .avatar-container i {
+        font-size: 24px;
+    }
+
+    .personne p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet Ligue 1 - Portfolio de Mathys Sousa">
+    <title>Projet Ligue 1 | Mathys Sousa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/realisation.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span><i class="fas fa-code"></i> MS</span>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Titre principal -->
+    <div class="site-title fade-in">
+        <h1><i class="fas fa-laptop-code"></i> PROJET DÉTAILLÉ</h1>
+    </div>
+    
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="../entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+            <li><a href="../realisation.html"><i class="fas fa-laptop-code"></i> Réalisations</a></li>
+            <li><a href="../veille.html"><i class="fas fa-newspaper"></i> Veille</a></li>
+            <li><a href="../bilan.html"><i class="fas fa-chart-line"></i> Bilan</a></li>
+        </ul>
+    </nav>
+
+    <div class="project-detail-container fade-in">
+        <!-- En-tête du projet -->
+        <div class="project-header">
+            <h2>Projet : Ligue 1</h2>
+            <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Trello</span>
+                <span class="tag">École</span>
+            </div>
+        </div>
+        
+        <!-- Description du projet -->
+        <div class="project-description">
+            <h3><i class="fas fa-info-circle"></i> Description du projet</h3>
+            <p>J'ai développé avec 3 camarades un site internet utilisant des requêtes API pour obtenir des informations sur le championnat de la Ligue 1 sur la saison 2023. Le site comprend un système de connexion utilisateur et plusieurs fonctionnalités comme la possibilité d'ajouter des équipes en favoris, faire des recherches et bien d'autres.</p>
+            <p>L'application permet de consulter le classement, les résultats des matchs, les statistiques des joueurs et des équipes en temps réel grâce à l'API de la Ligue 1. Nous avons mis en place une base de données pour stocker les informations des utilisateurs et leurs préférences.</p>
+            <p>Ce projet a été réalisé dans le cadre d'un cours sur le développement web avec Django, avec pour objectif de mettre en pratique nos connaissances en développement back-end, API REST et gestion d'équipe avec une méthodologie agile.</p>
+        </div>
+        
+        <!-- Technologies utilisées -->
+        <div class="project-technologies">
+            <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+            <div class="tech-list">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-name">Django (framework Python)</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-name">HTML/CSS</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-name">JavaScript</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="tech-name">GitHub</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-trello"></i>
+                    </div>
+                    <div class="tech-name">Trello</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tech-name">Visual Studio Code</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="tech-name">API REST</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Galerie d'images -->
+        <div class="project-gallery">
+            <h3><i class="fas fa-images"></i> Captures d'écran</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../../img/Ligue1.png" alt="Extrait de code">
+                </div>
+                <div class="gallery-item">
+                    <img src="../../img/Trello.png" alt="Organisation du projet sur Trello">
+                </div>
+                <div class="gallery-item">
+                    <img src="../../img/ligue1app.png" alt="Interface principale du site">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Conclusion -->
+        <div class="project-conclusion">
+            <h3><i class="fas fa-flag-checkered"></i> Conclusion</h3>
+            <p>Ce projet m'a permis de travailler en équipe avec une gestion du temps et une organisation des tâches à réaliser pour chaque membre du groupe. J'ai approfondi mes connaissances en Django, en gestion de base de données et en intégration d'API.</p>
+            <p>La mise en place du système d'authentification et de gestion des favoris a été particulièrement enrichissante. J'ai également appris à utiliser des outils de gestion de projet comme Trello et à mieux collaborer via GitHub avec des branches et des pull requests.</p>
+        </div>
+        
+        <!-- Bouton retour -->
+        <div class="back-to-projects">
+            <a href="../realisation.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </a>
+        </div>
+    </div>
+    
+    <!-- Modal pour afficher les images en grand -->
+    <div id="image-modal" class="image-modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" class="modal-img" src="" alt="">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/mathys-sousa-b32145273/" target="_blank" class="btn-social">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/VacheKiriii" target="_blank" class="btn-social">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" onclick="openPopup('popup-legal')">
+                    <i class="fas fa-gavel"></i> Mentions légales
+                </a>
+            </div>
+            <div class="footer-info">
+                <p class="copyright">Tous droits réservés. Portfolio Mathys Sousa | BTS SIO SLAM 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

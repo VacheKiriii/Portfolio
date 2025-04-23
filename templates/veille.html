@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma veille technologique sur les exosquelettes et neurotechnologies - Portfolio de Mathys Sousa">
+    <title>Portfolio - Veille Technologique | Mathys Sousa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/veille.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span><i class="fas fa-code"></i> MS</span>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Titre principal -->
+    <div class="site-title fade-in">
+        <h1><i class="fas fa-newspaper"></i> VEILLE TECHNOLOGIQUE</h1>
+    </div>
+    
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+            <li><a href="realisation.html"><i class="fas fa-laptop-code"></i> Réalisations</a></li>
+            <li><a href="veille.html"><i class="fas fa-newspaper"></i> Veille</a></li>
+            <li><a href="bilan.html"><i class="fas fa-chart-line"></i> Bilan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bloc "Pourquoi ce sujet" -->
+    <section class="pourquoi-sujet fade-in">
+        <h2><i class="fas fa-question-circle"></i> Pourquoi ce sujet ?</h2>
+        <div class="theme-content">
+            <p>J'ai choisi ce sujet car il combine les nouvelles technologies et l'intelligence artificielle, des domaines que j'aime beaucoup. Les exosquelettes sont un secteur en plein développement, avec un fort potentiel pour améliorer les domaines médical, militaire et industriel.</p>
+            <p>Cette technologie offre de grandes possibilités, comme aider les personnes handicapées à bouger, soutenir les travailleurs dans des tâches physiques difficiles, ou même renforcer les capacités des soldats sur le terrain.</p>
+            <p>Ma veille porte principalement sur les dernières avancées dans les exosquelettes et les neurotechnologies qui permettent de les contrôler par la pensée.</p>
+            <div class="theme-details">
+                <div class="theme-detail">
+                    <div class="detail-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="detail-text">
+                        <h3>Neurotechnologies</h3>
+                        <p>Interfaces cerveau-machine permettant le contrôle direct par la pensée</p>
+                    </div>
+                </div>
+                <div class="theme-detail">
+                    <div class="detail-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="detail-text">
+                        <h3>Exosquelettes médicaux</h3>
+                        <p>Dispositifs permettant aux personnes à mobilité réduite de retrouver leur autonomie</p>
+                    </div>
+                </div>
+                <div class="theme-detail">
+                    <div class="detail-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="detail-text">
+                        <h3>Applications industrielles</h3>
+                        <p>Systèmes d'assistance pour réduire la pénibilité au travail et prévenir les TMS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutons de tri -->
+    <div class="tri-boutons fade-in">
+        <button onclick="trierArticles('note')" class="btn-sort">
+            <i class="fas fa-star"></i> Trier par note
+        </button>
+        <button onclick="trierArticles('date')" class="btn-sort">
+            <i class="fas fa-calendar-alt"></i> Trier par date
+        </button>
+    </div>
+
+    <!-- Section des articles -->
+    <section class="articles-container fade-in">
+        <div class="articles">
+            <!-- Article 1 -->
+            <div class="article" data-nom="Article 1" data-date="2024-02-07" data-note="4">
+                <div class="article-badge">
+                    <span class="note"><i class="fas fa-star"></i> 4<span class="small">/5</span></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> 07/02/2024</span>
+                </div>
+                <div class="article-img-container">
+                    <img src="../img/article 1.png" alt="Exosquelette de Nouvelle Génération" class="article-image">
+                    <div class="article-category">Recherche</div>
+                </div>
+                <div class="article-content">
+                    <h2><a href="https://www.enseignementsup-recherche.gouv.fr/fr/la-recherche-sur-les-exosquelettes-avance-grands-pas-94677" target="_blank">Exosquelettes et Neurotechnologies : Des Avancées Révolutionnaires</a></h2>
+                    <p>Les dernières innovations du CEA permettent désormais à des personnes tétraplégiques de contrôler des exosquelettes grâce à des implants cérébraux et l'intelligence artificielle.</p>
+                    <button class="btn-details" onclick="openPopup('popup-article1')">
+                        <i class="fas fa-info-circle"></i> Lire le résumé
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Article 2 -->
+            <div class="article" data-nom="Article 2" data-date="2023-12-20" data-note="5">
+                <div class="article-badge">
+                    <span class="note"><i class="fas fa-star"></i> 5<span class="small">/5</span></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> 20/12/2023</span>
+                </div>
+                <div class="article-img-container">
+                    <img src="../img/article 2.png" alt="Exosquelette pour la Rééducation" class="article-image">
+                    <div class="article-category">Innovation</div>
+                </div>
+                <div class="article-content">
+                    <h2><a href="https://technplay.com/cure-wandercraft-exosquelette-autonome/" target="_blank">Exosquelette Cure : Une Révolution pour l'Autonomie des Personnes Handicapées</a></h2>
+                    <p>Wandercraft présente son exosquelette Cure qui permet aux personnes en situation de handicap de marcher de manière autonome tout en gardant les mains libres.</p>
+                    <button class="btn-details" onclick="openPopup('popup-article2')">
+                        <i class="fas fa-info-circle"></i> Lire le résumé
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Article 3 -->
+            <div class="article" data-nom="Article 3" data-date="2023-05-11" data-note="3">
+                <div class="article-badge">
+                    <span class="note"><i class="fas fa-star"></i> 3<span class="small">/5</span></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> 11/05/2023</span>
+                </div>
+                <div class="article-img-container">
+                    <img src="../img/article 3.png" alt="Exosquelette et Réduction de la Fatigue" class="article-image">
+                    <div class="article-category">Militaire</div>
+                </div>
+                <div class="article-content">
+                    <h2><a href="https://www.bfmtv.com/tech/exosquelette-drone-la-robotique-investi-le-champs-militaire_AV-202305110946.html" target="_blank">Le Projet Vulcain : Des Robots Militaires pour Soutenir les Soldats sur le Terrain</a></h2>
+                    <p>L'armée française développe des robots autonomes guidés par intelligence artificielle pour accompagner les unités de combat d'ici 2040.</p>
+                    <button class="btn-details" onclick="openPopup('popup-article3')">
+                        <i class="fas fa-info-circle"></i> Lire le résumé
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 4 - Nouvel article -->
+            <div class="article" data-nom="Article 4" data-date="2024-03-15" data-note="5">
+                <div class="article-badge">
+                    <span class="note"><i class="fas fa-star"></i> 5<span class="small">/5</span></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> 15/03/2024</span>
+                </div>
+                <div class="article-img-container">
+                    <img src="../img/article4.png" alt="Exosquelette EksoNR Pro" class="article-image">
+                    <div class="article-category">Médical</div>
+                </div>
+                <div class="article-content">
+                    <h2><a href="https://eksobionics.com/eksonr/" target="_blank">Ekso Bionics lance l'EksoNR Pro : révolution dans la rééducation neurologique</a></h2>
+                    <p>Le nouveau dispositif intègre des capteurs plus précis et une assistance adaptative qui s'ajuste en temps réel aux progrès du patient pendant la rééducation.</p>
+                    <button class="btn-details" onclick="openPopup('popup-article4')">
+                        <i class="fas fa-info-circle"></i> Lire le résumé
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 5 - Nouvel article -->
+            <div class="article" data-nom="Article 5" data-date="2024-01-22" data-note="4">
+                <div class="article-badge">
+                    <span class="note"><i class="fas fa-star"></i> 4<span class="small">/5</span></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> 22/01/2024</span>
+                </div>
+                <div class="article-img-container">
+                    <img src="../img/article5.png" alt="Exosquelette industriel Sarcos" class="article-image">
+                    <div class="article-category">Industrie</div>
+                </div>
+                <div class="article-content">
+                    <h2><a href="https://www.usine-digitale.fr/article/sarcos-leve-40-millions-de-dollars-pour-commercialiser-son-exosquelette-industriel-motorise.N998959" target="_blank">Sarcos Robotics dévoile un exosquelette industriel avec 8 heures d'autonomie</a></h2>
+                    <p>Le Guardian XO permet aux ouvriers de soulever jusqu'à 90 kg sans effort, avec une autonomie de batterie considérablement améliorée, une première dans l'industrie.</p>
+                    <button class="btn-details" onclick="openPopup('popup-article5')">
+                        <i class="fas fa-info-circle"></i> Lire le résumé
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 6 - Nouvel article -->
+            <div class="article" data-nom="Article 6" data-date="2024-02-28" data-note="4">
+                <div class="article-badge">
+                    <span class="note"><i class="fas fa-star"></i> 4<span class="small">/5</span></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> 28/02/2024</span>
+                </div>
+                <div class="article-img-container">
+                    <img src="../img/article6.png" alt="Interface neuronale Stanford" class="article-image">
+                    <div class="article-category">Neurotechnologie</div>
+                </div>
+                <div class="article-content">
+                    <h2><a href="https://www.20minutes.fr/high-tech/3021327-20210414-un-nouveau-capteur-sans-fil-permet-de-controler-des-appareils-mentalement" target="_blank">Neurotechnologies et exosquelettes : interface neuronale sans fil de Stanford</a></h2>
+                    <p>Des chercheurs de Stanford ont développé une interface neuronale sans fil plus précise qui permet un contrôle plus naturel et intuitif des exosquelettes par la pensée.</p>
+                    <button class="btn-details" onclick="openPopup('popup-article6')">
+                        <i class="fas fa-info-circle"></i> Lire le résumé
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-ups pour les articles -->
+    <div id="popup-article1" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-article1')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> Exosquelettes et Neurotechnologies : Des Avancées Révolutionnaires</h2>
+            <div class="article-full">
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i> Date de publication : 7 février 2024
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i> Note : 4/5
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-link"></i> Source : <a href="https://www.enseignementsup-recherche.gouv.fr/fr/la-recherche-sur-les-exosquelettes-avance-grands-pas-94677" target="_blank">Ministère de l'Enseignement Supérieur et de la Recherche</a>
+                    </div>
+                </div>
+                <div class="article-summary">
+                    <p>L'article présente les dernières innovations du CEA (Commissariat à l'Énergie Atomique) dans le domaine des exosquelettes contrôlés par la pensée. Ces avancées permettent désormais à des personnes tétraplégiques de piloter des exosquelettes grâce à des implants cérébraux couplés à des algorithmes d'intelligence artificielle de pointe.</p>
+                    <p>Les chercheurs ont développé un système d'électrodes implantées directement dans le cortex moteur qui captent les signaux cérébraux avec une précision inégalée. Ces signaux sont ensuite traités par un algorithme d'IA qui les traduit en commandes de mouvement pour l'exosquelette, permettant aux patients de réaliser des gestes complexes comme saisir des objets ou monter des escaliers.</p>
+                </div>
+                <div class="article-tools">
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h4>Feedly</h4>
+                            <p>Agrégateur de flux RSS pour suivre les actualités du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-learnings">
+                    <h3><i class="fas fa-lightbulb"></i> Ce que j'ai appris</h3>
+                    <p>Cette veille m'a permis de comprendre les dernières avancées en matière d'interfaces cerveau-machine et leur application dans le domaine des exosquelettes. J'ai découvert que la précision du décodage des signaux cérébraux a fait des progrès considérables, permettant des mouvements beaucoup plus naturels et intuitifs. Le rôle crucial de l'intelligence artificielle dans l'interprétation des signaux neuronaux et l'adaptation au patient est particulièrement intéressant pour mon suivi technologique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-article2" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-article2')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> Exosquelette Cure : Une Révolution pour l'Autonomie des Personnes Handicapées</h2>
+            <div class="article-full">
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i> Date de publication : 20 décembre 2023
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i> Note : 5/5
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-link"></i> Source : <a href="https://technplay.com/cure-wandercraft-exosquelette-autonome/" target="_blank">Technplay</a>
+                    </div>
+                </div>
+                <div class="article-summary">
+                    <p>L'article présente l'exosquelette Cure, développé par Wandercraft, qui permet aux personnes en situation de handicap de marcher de manière autonome tout en ayant les mains libres. Cette technologie avancée repose sur des innovations en robotique et en intelligence artificielle, offrant une marche stable et améliorant la qualité de vie des utilisateurs.</p>
+                    <p>Les essais cliniques commenceront en 2024 en vue de l'approbation par la FDA et le marquage CE. Cure s'inspire du succès de l'exosquelette Atalante, déjà utilisé dans des centres de rééducation, avec une locomotion multidirectionnelle et une conception adaptée aux environnements urbains.</p>
+                </div>
+                <div class="article-tools">
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h4>Feedly</h4>
+                            <p>Agrégateur de flux RSS pour suivre les actualités du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-learnings">
+                    <h3><i class="fas fa-lightbulb"></i> Ce que j'ai appris</h3>
+                    <p>Cette veille m'a permis de découvrir l'importance de l'ergonomie et de l'autonomie dans la conception d'exosquelettes destinés à un usage quotidien. Les avancées en matière de stabilité et d'équilibre dynamique sont cruciales pour permettre une utilisation sécurisée dans la vie de tous les jours. L'approche de Wandercraft montre également l'importance des tests cliniques rigoureux pour valider l'efficacité et la sécurité de ces dispositifs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-article3" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-article3')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> Le Projet Vulcain : Des Robots Militaires pour Soutenir les Soldats sur le Terrain</h2>
+            <div class="article-full">
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i> Date de publication : 11 Mai 2023
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i> Note : 3/5
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-link"></i> Source : <a href="https://www.bfmtv.com/tech/exosquelette-drone-la-robotique-investi-le-champs-militaire_AV-202305110946.html" target="_blank">BFMTV</a>
+                    </div>
+                </div>
+                <div class="article-summary">
+                    <p>L'armée française lance le projet Vulcain, initié en 2021, pour développer des robots soutenus par intelligence artificielle afin d'améliorer les stratégies militaires d'ici 2040. Ce projet s'inscrit dans une tendance mondiale où de nombreuses armées investissent dans des systèmes autonomes pour renforcer l'efficacité sur le terrain.</p>
+                    <p>L'objectif est de concevoir des robots terrestres polyvalents et armés pour accompagner les unités de combat, fournir un appui-feu précis et réduire les risques pour les soldats. Le projet marque une évolution majeure dans l'utilisation de robots sur le champ de bataille, visant à améliorer la sécurité et la réussite des missions.</p>
+                </div>
+                <div class="article-tools">
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h4>Feedly</h4>
+                            <p>Agrégateur de flux RSS pour suivre les actualités du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-learnings">
+                    <h3><i class="fas fa-lightbulb"></i> Ce que j'ai appris</h3>
+                    <p>Cette veille m'a permis de comprendre les applications militaires de la robotique et des exosquelettes, ainsi que les défis éthiques et techniques associés à l'utilisation de systèmes autonomes au combat. Le développement parallèle de robots de combat et d'exosquelettes montre la diversité des approches dans l'augmentation des capacités militaires.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nouveaux pop-ups pour les nouveaux articles -->
+    <div id="popup-article4" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-article4')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> Ekso Bionics lance l'EksoNR Pro : révolution dans la rééducation neurologique</h2>
+            <div class="article-full">
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i> Date de publication : 15 Mars 2024
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i> Note : 5/5
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-link"></i> Source : <a href="https://eksobionics.com/eksonr/" target="_blank">Ekso Bionics</a>
+                    </div>
+                </div>
+                <div class="article-summary">
+                    <p>L'article présente le lancement de l'EksoNR Pro, le dernier exosquelette de rééducation développé par Ekso Bionics. Ce dispositif avancé intègre une nouvelle génération de capteurs qui peuvent mesurer avec précision les mouvements et l'effort du patient, permettant ainsi un ajustement en temps réel de l'assistance fournie.</p>
+                    <p>L'EksoNR Pro utilise des algorithmes d'intelligence artificielle pour adapter le niveau d'assistance au fur et à mesure que le patient progresse dans sa rééducation, facilitant une transition graduelle vers une mobilité indépendante. Le système inclut également une interface numérique pour les thérapeutes leur permettant de suivre précisément les progrès et d'ajuster les programmes de rééducation en conséquence.</p>
+                </div>
+                <div class="article-tools">
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h4>Feedly</h4>
+                            <p>Agrégateur de flux RSS pour suivre les actualités du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-learnings">
+                    <h3><i class="fas fa-lightbulb"></i> Ce que j'ai appris</h3>
+                    <p>Cette veille m'a permis d'approfondir ma compréhension de l'importance de l'adaptation progressive dans la rééducation neurologique. L'intégration de l'intelligence artificielle dans les exosquelettes médicaux représente une avancée significative qui permet de personnaliser la thérapie à un niveau jamais atteint auparavant. La capacité du système à ajuster automatiquement son assistance en fonction des progrès du patient est particulièrement intéressante pour optimiser les résultats thérapeutiques.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-article5" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-article5')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> Sarcos Robotics dévoile un exosquelette industriel avec 8 heures d'autonomie</h2>
+            <div class="article-full">
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i> Date de publication : 22 Janvier 2024
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i> Note : 4/5
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-link"></i> Source : <a href="https://www.usine-digitale.fr/article/sarcos-leve-40-millions-de-dollars-pour-commercialiser-son-exosquelette-industriel-motorise.N998959" target="_blank">Sarcos Robotics</a>
+                    </div>
+                </div>
+                <div class="article-summary">
+                    <p>Sarcos Robotics a présenté sa dernière version du Guardian XO, un exosquelette complet qui permet aux ouvriers industriels de soulever jusqu'à 90 kg sans effort. La principale innovation de cette version est son autonomie de batterie considérablement améliorée, atteignant désormais 8 heures de fonctionnement continu, une première dans l'industrie des exosquelettes.</p>
+                    <p>Cette avancée a été rendue possible grâce à une nouvelle architecture de batterie et des optimisations d'efficacité énergétique. L'exosquelette dispose également d'un système de refroidissement amélioré qui permet de l'utiliser confortablement pendant de longues périodes. Plusieurs entreprises des secteurs de la construction, de la logistique et de la fabrication ont déjà commandé des unités pour leurs équipes de manutention lourde.</p>
+                </div>
+                <div class="article-tools">
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h4>Feedly</h4>
+                            <p>Agrégateur de flux RSS pour suivre les actualités du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-learnings">
+                    <h3><i class="fas fa-lightbulb"></i> Ce que j'ai appris</h3>
+                    <p>Cette veille m'a permis de mieux comprendre les défis liés à l'autonomie énergétique des exosquelettes, qui est l'un des principaux obstacles à leur adoption généralisée dans l'industrie. L'amélioration significative de l'autonomie à 8 heures représente une avancée capitale qui pourrait accélérer l'intégration de ces technologies dans les environnements de travail quotidiens. J'ai également appris comment les améliorations de l'efficacité énergétique et la gestion thermique sont cruciales pour le développement d'exosquelettes véritablement pratiques.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-article6" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup-article6')">&times;</span>
+            <h2><i class="fas fa-newspaper"></i> Neurotechnologies et exosquelettes : interface neuronale sans fil de Stanford</h2>
+            <div class="article-full">
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i> Date de publication : 28 Février 2024
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-star"></i> Note : 4/5
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-link"></i> Source : <a href="https://www.20minutes.fr/high-tech/3021327-20210414-un-nouveau-capteur-sans-fil-permet-de-controler-des-appareils-mentalement" target="_blank">Université Stanford</a>
+                    </div>
+                </div>
+                <div class="article-summary">
+                    <p>Des chercheurs de l'Université Stanford ont développé une nouvelle interface neuronale sans fil qui permet un contrôle plus intuitif et précis des exosquelettes directement par la pensée. Cette interface utilise des électrodes miniaturisées implantées dans le cortex moteur du cerveau, capables de capter les signaux neuronaux avec une résolution et une précision considérablement améliorées.</p>
+                    <p>L'innovation majeure réside dans l'algorithme de décodage des signaux qui parvient à interpréter les intentions motrices de manière beaucoup plus naturelle que les technologies précédentes. Les tests préliminaires montrent que les utilisateurs peuvent contrôler un exosquelette avec des mouvements plus fluides et plus complexes, comme saisir des objets de différentes tailles ou monter des escaliers, avec un temps d'apprentissage considérablement réduit.</p>
+                </div>
+                <div class="article-tools">
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-rss"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h4>Feedly</h4>
+                            <p>Agrégateur de flux RSS pour suivre les actualités du secteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-learnings">
+                    <h3><i class="fas fa-lightbulb"></i> Ce que j'ai appris</h3>
+                    <p>Cette veille m'a permis d'approfondir ma compréhension de la complexité des interfaces cerveau-machine et de leur potentiel transformateur pour le contrôle des exosquelettes. Les avancées dans les algorithmes de décodage neural sont cruciales pour franchir le fossé entre l'intention mentale et l'action physique de l'exosquelette. J'ai également appris que la fluidité des mouvements et la réduction du temps d'apprentissage sont des facteurs essentiels pour l'adoption de ces technologies par les patients, car ils permettent une expérience plus naturelle et moins frustrante.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/mathys-sousa-b32145273/" target="_blank" class="btn-social">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/VacheKiriii" target="_blank" class="btn-social">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mentions-legales.html">
+                    <i class="fas fa-gavel"></i> Mentions légales
+                </a>
+            </div>
+            <div class="footer-info">
+                <p class="copyright">Tous droits réservés. Portfolio Mathys Sousa | BTS SIO SLAM 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilan de mon parcours en BTS SIO SLAM - Portfolio de Mathys Sousa">
+    <title>Portfolio - Mon Bilan | Mathys Sousa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/bilan.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span><i class="fas fa-code"></i> MS</span>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Titre principal -->
+    <div class="site-title fade-in">
+        <h1><i class="fas fa-chart-line"></i> MON BILAN</h1>
+    </div>
+    
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+            <li><a href="realisation.html"><i class="fas fa-laptop-code"></i> Réalisations</a></li>
+            <li><a href="veille.html"><i class="fas fa-newspaper"></i> Veille</a></li>
+            <li><a href="bilan.html"><i class="fas fa-chart-line"></i> Bilan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Introduction -->
+    <section class="bilan-intro fade-in" data-aos="fade-up">
+        <h2><i class="fas fa-file-alt"></i> Introduction</h2>
+        <div class="bilan-grid">
+            <div class="bilan-text">
+                <p>Cette page fait une présentation de mon parcours en BTS SIO option SLAM, des compétences que j'ai acquises, et un bilan des projets que j'ai réalisés en entreprise et à l'école.</p>
+                <p>Au cours de ces deux années de formation, j'ai pu développer mes compétences techniques en développement, apprendre pleins de languages et outils, mais également des compétences essentielles comme la communication, la gestion de projet et le travail en équipe.</p>
+                <p>Ce bilan permet de faire le point sur ma formation, d'identifier mes points forts et les perspectives d'avenirs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences Acquises -->
+    <section class="bilan-competences fade-in" data-aos="fade-up">
+        <h2><i class="fas fa-award"></i> Compétences Acquises</h2>
+        
+        <div class="competences-tabs">
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="openTab('tab1')"><i class="fas fa-code"></i> Techniques</button>
+                <button class="tab-btn" onclick="openTab('tab2')"><i class="fas fa-users"></i> Relationnelles</button>
+                <button class="tab-btn" onclick="openTab('tab3')"><i class="fas fa-tasks"></i> Organisationnelles</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div id="tab1" class="tab-content active">
+                    <h3>Compétences Techniques</h3>
+                    <div class="competences-grid">
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Développement d'applications</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                                <p>Maîtrise des langages Python, Java, JavaScript et PHP pour la création d'applications web et mobiles.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Gestion de bases de données</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                                <p>Conception et administration de bases de données SQL, création de requêtes complexes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Architecture logicielle</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                                <p>Conception d'architectures MVC, création de diagrammes UML, documentation technique.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Développement web</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                                <p>Création de sites web dynamiques avec HTML/CSS/JavaScript, utilisation de frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="tab2" class="tab-content">
+                    <h3>Compétences Relationnelles</h3>
+                    <div class="competences-grid">
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Communication</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                                <p>Capacité à communiquer clairement avec les clients et les membres de l'équipe.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Travail en équipe</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                                <p>Collaboration efficace avec différents membres d'équipe et partage des connaissances.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Assistance utilisateur</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                                <p>Accompagnement des utilisateurs dans la prise en main des outils informatiques.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Professionnalisme</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                                <p>Respect des délais, adaptabilité, rigueur et éthique professionnelle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="tab3" class="tab-content">
+                    <h3>Compétences Organisationnelles</h3>
+                    <div class="competences-grid">
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Gestion de projet</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                                <p>Planification, suivi et livraison de projets informatiques dans les délais impartis.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Gestion du temps</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                                <p>Capacité à prioriser les tâches et à respecter les échéances dans un environnement multitâche.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Analyse et résolution de problèmes</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                                <p>Identification et résolution efficace des problèmes techniques et fonctionnels.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="competence-card">
+                            <div class="competence-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="competence-info">
+                                <h4>Veille technologique</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                                <p>Organisation d'une veille régulière pour rester à jour sur les nouvelles technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets Significatifs -->
+    <section class="bilan-projets fade-in" data-aos="fade-up">
+        <h2><i class="fas fa-briefcase"></i> Projets Significatifs</h2>
+        
+        <div class="projects-timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <span>Janvier 2024</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Application d'automatisation des mails d'anniversaire</h3>
+                    <div class="project-details">
+                        <div class="project-logo">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="project-info">
+                            <p>Développement d'une application complète pour l'envoi automatique de mails lors des anniversaires des employés de l'entreprise.</p>
+                            <p><strong>Compétences mobilisées :</strong> Windev, Webdev, SQL, tâches planifiées, interface utilisateur</p>
+                            <p><strong>Apport :</strong> Cette application a amélioré la cohésion d'équipe et automatisé un processus auparavant manuel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <span>Novembre 2024</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Projet Ligue 1 - API et interface utilisateur</h3>
+                    <div class="project-details">
+                        <div class="project-logo">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="project-info">
+                            <p>Création d'un site web avec Django permettant d'accéder aux données de la Ligue 1 via API, avec système de gestion des favoris.</p>
+                            <p><strong>Compétences mobilisées :</strong> Django, Python, API REST, SQL, HTML/CSS, travail d'équipe</p>
+                            <p><strong>Apport :</strong> Ce projet m'a permis de comprendre l'importance de la gestion de projet en équipe et de l'intégration d'API.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <span>Décembre 2024</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Adaptation des feuilles de pesée Excel avec VBA</h3>
+                    <div class="project-details">
+                        <div class="project-logo">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <div class="project-info">
+                            <p>Optimisation des feuilles Excel du service production de l'entreprise avec programmation VBA et intégration d'un scanner.</p>
+                            <p><strong>Compétences mobilisées :</strong> Excel VBA, automatisation, analyse des besoins</p>
+                            <p><strong>Apport :</strong> Cette solution a considérablement amélioré l'efficacité du processus de production et réduit les erreurs de saisie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Conclusion et Perspectives -->
+    <section class="bilan-conclusion fade-in" data-aos="fade-up">
+        <h2><i class="fas fa-road"></i> Conclusion et Perspectives</h2>
+        
+        <div class="conclusion-container">
+            <div class="conclusion-text">
+                <p>Ces deux années de BTS SIO option SLAM m'ont permis d'acquérir des compétences techniques dans le domaine du développement informatique. L'alternance a permis de me faire travailler dans un monde professionnelle, en suivant des procédures et réglementations très précises.</p>
+                <p>J'ai maintenant plus de faciliter à travailler de manière organisé et structuré. J'arrive à mieux gérer mon temps et à mieux analyser les besoins des utilisateurs.</p>
+                
+                <h3><i class="fas fa-compass"></i> Mes perspectives d'avenir</h3>
+                <ul class="perspectives-list">
+                    <li>
+                        <div class="perspective-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="perspective-text">
+                            <strong>Poursuite d'études :</strong> Je souhaite poursuivre mes études en bachelor pour approfondir mes connaissances.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="perspective-icon"><i class="fas fa-globe"></i></div>
+                        <div class="perspective-text">
+                            <strong>Expérience internationale :</strong> Je souhaite également acquérir une expérience à l'international pour découvrir d'autres méthodes de travail et améliorer mon niveau d'anglais.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/mathys-sousa-b32145273/" target="_blank" class="btn-social">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/VacheKiriii" target="_blank" class="btn-social">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mentions-legales.html">
+                    <i class="fas fa-gavel"></i> Mentions légales
+                </a>
+            </div>
+            <div class="footer-info">
+                <p class="copyright">Tous droits réservés. Portfolio Mathys Sousa | BTS SIO SLAM 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Fonction pour les onglets
+        function openTab(tabId) {
+            // Masquer tous les contenus d'onglets
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Désactiver tous les boutons d'onglets
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Afficher le contenu de l'onglet sélectionné
+            document.getElementById(tabId).classList.add('active');
+            
+            // Activer le bouton de l'onglet sélectionné
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

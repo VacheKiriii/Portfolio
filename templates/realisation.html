@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez mes projets réalisés en entreprise et durant ma formation - Portfolio de Mathys Sousa">
+    <title>Portfolio - Mes Réalisations | Mathys Sousa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/realisation.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span><i class="fas fa-code"></i> MS</span>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Titre principal -->
+    <div class="site-title fade-in">
+        <h1><i class="fas fa-laptop-code"></i> MES RÉALISATIONS</h1>
+    </div>
+    
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="entreprise.html"><i class="fas fa-building"></i> Entreprise</a></li>
+            <li><a href="realisation.html"><i class="fas fa-laptop-code"></i> Réalisations</a></li>
+            <li><a href="veille.html"><i class="fas fa-newspaper"></i> Veille</a></li>
+            <li><a href="bilan.html"><i class="fas fa-chart-line"></i> Bilan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Boutons de filtrage -->
+    <div class="filter-buttons fade-in">
+        <button class="btn-filter active" onclick="filterProjects('all')">
+            <i class="fas fa-border-all"></i> Tous les projets
+        </button>
+        <button class="btn-filter" onclick="filterProjects('ecole')">
+            <i class="fas fa-graduation-cap"></i> Projets École
+        </button>
+        <button class="btn-filter" onclick="filterProjects('entreprise')">
+            <i class="fas fa-building"></i> Projets Entreprise
+        </button>
+    </div>
+
+    <!-- Section des projets -->
+    <section class="realisation fade-in" data-aos="fade-up">
+        <!-- Projet 1 : JoStarter -->
+        <div class="project-card ecole fade-in" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-icon">
+                <i class="fas fa-running"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/JoStarter.png" alt="JoStarter - Aperçu">
+            </div>
+            <h3>JoStarter</h3>
+            <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">Javascript</span>
+                <span class="tag">HTML</span>
+            </div>
+            <div class="realisation-content">
+                <p>Application web pour suivre les athlètes et événements des JO en temps réel.</p>
+                <a href="projets/jostarter.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 2 : GestEPI -->
+        <div class="project-card entreprise fade-in" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/gestepi.png" alt="GestEPI - Aperçu">
+            </div>
+            <h3>GestEPI</h3>
+            <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">VSCode</span>
+            </div>
+            <div class="realisation-content">
+                <p>Logiciel de gestion des équipements de protection individuelle pour les collaborateurs.</p>
+                <a href="projets/gestepi.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 3 : Entreprise (Mail Automatique) -->
+        <div class="project-card entreprise fade-in" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/mailpdp.png" alt="Mail Automatique - Aperçu">
+            </div>
+            <h3>Mail Automatique</h3>
+            <div class="project-tags">
+                <span class="tag">Windev</span>
+                <span class="tag">Webdev</span>
+                <span class="tag">Teams</span>
+            </div>
+            <div class="realisation-content">
+                <p>Système d'envoi automatique d'emails pour les anniversaires des employés.</p>
+                <a href="projets/mail-automatique.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 4 : École (Jeu Text Adventure) -->
+        <div class="project-card ecole fade-in" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-icon">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/mangapdp.png" alt="Jeu Text Adventure - Aperçu">
+            </div>
+            <h3>Jeu Text Adventure</h3>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">VSCode</span>
+                <span class="tag">GitHub</span>
+            </div>
+            <div class="realisation-content">
+                <p>Jeu d'aventure textuel développé en Python avec système de combat.</p>
+                <a href="projets/jeu-text-adventure.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 5 : École (Projet Ticket JO) -->
+        <div class="project-card ecole fade-in" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-icon">
+                <i class="fas fa-ticket-alt"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/JoTicket.png" alt="Projet Ticket JO - Aperçu">
+            </div>
+            <h3>Projet Ticket JO</h3>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">VSCode</span>
+            </div>
+            <div class="realisation-content">
+                <p>Système de création de tickets avec QR code pour les JO.</p>
+                <a href="projets/ticket-jo.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 6 : École (Projet Ligue 1) -->
+        <div class="project-card ecole fade-in" data-aos="fade-up" data-aos-delay="600">
+            <div class="project-icon">
+                <i class="fas fa-futbol"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/ligue1pdp.png" alt="Projet Ligue 1 - Aperçu">
+            </div>
+            <h3>Projet Ligue 1</h3>
+            <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Trello</span>
+            </div>
+            <div class="realisation-content">
+                <p>Site web utilisant l'API de la Ligue 1 avec système de connexion.</p>
+                <a href="projets/ligue1.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 7 : Entreprise (Adaptation de feuilles de pesée) -->
+        <div class="project-card entreprise fade-in" data-aos="fade-up" data-aos-delay="700">
+            <div class="project-icon">
+                <i class="fas fa-file-excel"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/MailAutomatiqueValidation.png" alt="Adaptation de feuilles de pesée - Aperçu">
+            </div>
+            <h3>Adaptation de feuilles de pesée</h3>
+            <div class="project-tags">
+                <span class="tag">Excel</span>
+                <span class="tag">VBA</span>
+                <span class="tag">Teams</span>
+            </div>
+            <div class="realisation-content">
+                <p>Optimisation de feuilles Excel pour le service production.</p>
+                <a href="projets/feuille-pesee.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+
+        <!-- Projet 8 : École (Gestion Entretien) -->
+        <div class="project-card ecole fade-in" data-aos="fade-up" data-aos-delay="800">
+            <div class="project-icon">
+                <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-image">
+                <img src="../img/Rpostman.png" alt="Gestion Entretien - Aperçu">
+            </div>
+            <h3>Gestion Entretien</h3>
+            <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Postman</span>
+                <span class="tag">GitHub</span>
+            </div>
+            <div class="realisation-content">
+                <p>Backend pour la gestion d'entretiens avec requêtes API.</p>
+                <a href="projets/gestion-entretien.html" class="btn-details">
+                    <i class="fas fa-info-circle"></i> Voir les détails
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/mathys-sousa-b32145273/" target="_blank" class="btn-social">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/VacheKiriii" target="_blank" class="btn-social">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mentions-legales.html">
+                    <i class="fas fa-gavel"></i> Mentions légales
+                </a>
+            </div>
+            <div class="footer-info">
+                <p class="copyright">Tous droits réservés. Portfolio Mathys Sousa | BTS SIO SLAM 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

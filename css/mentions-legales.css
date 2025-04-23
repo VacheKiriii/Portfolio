@@ -1,0 +1,242 @@
+/* Styles spécifiques pour la page des mentions légales */
+
+.mentions-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mentions-section {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.mentions-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(226, 74, 104, 0.3);
+    border-color: #E24A68;
+}
+
+.mentions-section h2 {
+    color: #E24A68;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.mentions-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #E24A68;
+    transition: width 0.3s ease;
+}
+
+.mentions-section:hover h2::after {
+    width: 100%;
+}
+
+.mentions-section h3 {
+    color: #fff;
+    margin: 25px 0 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.mentions-section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.mentions-section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.mentions-section li {
+    margin-bottom: 10px;
+    color: #ccc;
+    position: relative;
+    padding-left: 20px;
+}
+
+.mentions-section li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #E24A68;
+    border-radius: 50%;
+}
+
+.mentions-section a {
+    color: #E24A68;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.mentions-section a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #E24A68;
+    transition: width 0.3s ease;
+}
+
+.mentions-section a:hover {
+    color: #c0392b;
+}
+
+.mentions-section a:hover::after {
+    width: 100%;
+}
+
+.mentions-section strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.back-link {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px;
+}
+
+.btn-back {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+.btn-back:hover {
+    background-color: #E24A68;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(226, 74, 104, 0.3);
+}
+
+.btn-back:hover::before {
+    left: 100%;
+}
+
+/* Icon styling */
+.mentions-section i {
+    color: #E24A68;
+    margin-right: 5px;
+}
+
+/* Animation for section appearance */
+.mentions-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add delay to each section */
+.mentions-section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.mentions-section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.mentions-section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.mentions-section:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.mentions-section:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.mentions-section:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.mentions-section:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.mentions-section:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mentions-section {
+        padding: 20px;
+    }
+    
+    .mentions-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .mentions-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mentions-container {
+        padding: 10px;
+    }
+    
+    .mentions-section {
+        padding: 15px;
+    }
+    
+    .mentions-section h2 {
+        font-size: 1.3rem;
+    }
+}
